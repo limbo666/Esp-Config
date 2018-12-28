@@ -38,3 +38,17 @@ D:\DRPBX\Dropbox\Development\VB14\ESP-Config\WhiteInfo\obj\Debug\ESP-Config.vbpr
 D:\DRPBX\Dropbox\Development\VB14\ESP-Config\WhiteInfo\obj\Debug\ESP-Config.exe
 D:\DRPBX\Dropbox\Development\VB14\ESP-Config\WhiteInfo\obj\Debug\ESP-Config.xml
 D:\DRPBX\Dropbox\Development\VB14\ESP-Config\WhiteInfo\obj\Debug\ESP-Config.pdb
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\bin\Debug\ESP-Config.exe.config
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\bin\Debug\ESP-Config.exe
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\bin\Debug\ESP-Config.pdb
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\bin\Debug\ESP-Config.xml
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESP-Config.vbprojAssemblyReference.cache
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESPConfig.Form1.resources
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESPConfig.FrmAbout.resources
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESPConfig.FrmSettings.resources
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESPConfig.Resources.resources
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESP-Config.vbproj.GenerateResource.cache
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESP-Config.vbproj.CoreCompileInputs.cache
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESP-Config.exe
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESP-Config.xml
+D:\DRPBX\Dropbox\Development\VB14\ESP-Config\Esp-Config\WhiteInfo\obj\Debug\ESP-Config.pdb
