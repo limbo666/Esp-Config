@@ -37,13 +37,15 @@ Partial Class Form1
         Me.TxtBxDeviceID = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.BtnWrite = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.BtnWrite = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.StLblColor = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StLblConnectionStatus = New System.Windows.Forms.ToolStripStatusLabel()
@@ -60,6 +62,7 @@ Partial Class Form1
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -71,15 +74,16 @@ Partial Class Form1
         '
         Me.TxtBxSSID.Location = New System.Drawing.Point(42, 19)
         Me.TxtBxSSID.Name = "TxtBxSSID"
-        Me.TxtBxSSID.Size = New System.Drawing.Size(172, 20)
+        Me.TxtBxSSID.Size = New System.Drawing.Size(201, 20)
         Me.TxtBxSSID.TabIndex = 0
         '
         'TxtBxPass
         '
         Me.TxtBxPass.Location = New System.Drawing.Point(42, 45)
         Me.TxtBxPass.Name = "TxtBxPass"
-        Me.TxtBxPass.Size = New System.Drawing.Size(172, 20)
+        Me.TxtBxPass.Size = New System.Drawing.Size(201, 20)
         Me.TxtBxPass.TabIndex = 1
+        Me.TxtBxPass.UseSystemPasswordChar = True
         '
         'Label1
         '
@@ -143,7 +147,7 @@ Partial Class Form1
         '
         Me.TxtBxDeviceID.Location = New System.Drawing.Point(69, 27)
         Me.TxtBxDeviceID.Name = "TxtBxDeviceID"
-        Me.TxtBxDeviceID.Size = New System.Drawing.Size(145, 20)
+        Me.TxtBxDeviceID.Size = New System.Drawing.Size(174, 20)
         Me.TxtBxDeviceID.TabIndex = 12
         '
         'Label4
@@ -157,18 +161,27 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.BtnWrite)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Location = New System.Drawing.Point(9, 107)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(240, 265)
+        Me.GroupBox1.Size = New System.Drawing.Size(268, 287)
         Me.GroupBox1.TabIndex = 14
         Me.GroupBox1.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ESPConfig.My.Resources.Resources.Serial_Two
+        Me.PictureBox1.Location = New System.Drawing.Point(169, 176)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(83, 83)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
         '
         'TextBox2
         '
@@ -193,54 +206,67 @@ Partial Class Form1
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Label6"
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label4)
+        Me.GroupBox3.Controls.Add(Me.TxtBxDeviceID)
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Location = New System.Drawing.Point(9, 109)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(253, 161)
+        Me.GroupBox3.TabIndex = 15
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Other"
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(17, 180)
+        Me.Label5.Location = New System.Drawing.Point(9, 67)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "Label5"
         '
-        'BtnWrite
-        '
-        Me.BtnWrite.Location = New System.Drawing.Point(159, 204)
-        Me.BtnWrite.Name = "BtnWrite"
-        Me.BtnWrite.Size = New System.Drawing.Size(75, 49)
-        Me.BtnWrite.TabIndex = 22
-        Me.BtnWrite.Text = "Write all"
-        Me.BtnWrite.UseVisualStyleBackColor = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.Label4)
-        Me.GroupBox3.Controls.Add(Me.TxtBxDeviceID)
-        Me.GroupBox3.Location = New System.Drawing.Point(9, 109)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(221, 61)
-        Me.GroupBox3.TabIndex = 15
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Other"
-        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.TxtBxPass)
         Me.GroupBox2.Controls.Add(Me.TxtBxSSID)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 19)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 13)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(221, 84)
+        Me.GroupBox2.Size = New System.Drawing.Size(253, 90)
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "WiFi Info"
         '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(155, 68)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(59, 13)
+        Me.LinkLabel2.TabIndex = 6
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Show pass"
+        '
+        'BtnWrite
+        '
+        Me.BtnWrite.Location = New System.Drawing.Point(188, 400)
+        Me.BtnWrite.Name = "BtnWrite"
+        Me.BtnWrite.Size = New System.Drawing.Size(89, 28)
+        Me.BtnWrite.TabIndex = 22
+        Me.BtnWrite.Text = "Write all"
+        Me.BtnWrite.UseVisualStyleBackColor = True
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StLblColor, Me.StLblConnectionStatus, Me.LblComStatus, Me.StlblResult})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 384)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 431)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(268, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(289, 22)
         Me.StatusStrip1.TabIndex = 15
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -268,11 +294,11 @@ Partial Class Form1
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.Button2)
         Me.GroupBox4.Controls.Add(Me.LinkLabel1)
         Me.GroupBox4.Controls.Add(Me.ComboBox1)
         Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Controls.Add(Me.Label1)
+        Me.GroupBox4.Controls.Add(Me.Button2)
         Me.GroupBox4.Location = New System.Drawing.Point(10, 29)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(239, 72)
@@ -295,7 +321,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(268, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(289, 24)
         Me.MenuStrip1.TabIndex = 17
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -322,7 +348,7 @@ Partial Class Form1
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'HelpToolStripMenuItem
@@ -346,11 +372,12 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(268, 406)
+        Me.ClientSize = New System.Drawing.Size(289, 453)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.BtnWrite)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
@@ -358,6 +385,7 @@ Partial Class Form1
         Me.Text = "ESP-Config"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -408,4 +436,6 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents BtnWrite As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LinkLabel2 As LinkLabel
 End Class

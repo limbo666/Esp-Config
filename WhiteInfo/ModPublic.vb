@@ -7,4 +7,6 @@
     Public FieldOneName As String = ""
     Public AskToRestart As Boolean = False
     Public DisconnectAfterWrite As Boolean = True
+    Public Baud As Integer = 115200
+
 End Module

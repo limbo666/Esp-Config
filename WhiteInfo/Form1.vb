@@ -30,8 +30,8 @@ Public Class Form1
         FieldTwo = GetSetting("ESP-Config", "Settings", "FieldTwo", False)
         FieldOne = GetSetting("ESP-Config", "Settings", "FieldOne", False)
 
-        FieldTwoName = GetSetting("ESP-Config", "Settings", "FieldTwoName", "field name")
-        FieldOneName = GetSetting("ESP-Config", "Settings", "FieldOneName", "field name")
+        FieldTwoName = GetSetting("ESP-Config", "Settings", "FieldTwoName", "SomeVariable")
+        FieldOneName = GetSetting("ESP-Config", "Settings", "FieldOneName", "AnotherVariable")
         AskToRestart = GetSetting("ESP-Config", "Settings", "AskToRestart", False)
         DisconnectAfterWrite = GetSetting("ESP-Config", "Settings", "DisconnectAfterWrite", False)
 
@@ -41,7 +41,7 @@ Public Class Form1
         Label6.Visible = FieldTwo
         Label5.Text = FieldOneName
         Label6.Text = FieldTwoName
-
+        Baud = GetSetting("ESP-Config", "Settings", "Baud", 115200)
         ExtraFieldsMani()
 
 
@@ -68,8 +68,8 @@ Public Class Form1
                 Exit Sub
             Else
                 SerialPort1.PortName = ComboBox1.Text
-                SerialPort1.BaudRate = 115200
-                SerialPort1.Encoding = System.Text.Encoding.ASCII  'change made here
+                SerialPort1.BaudRate = Baud
+                SerialPort1.Encoding = System.Text.Encoding.ASCII  'change mode here
                 SerialPort1.Open()
                 Thread.Sleep(Delay)
                 SerialPort1.WriteLine("")
@@ -223,5 +223,23 @@ Public Class Form1
         End If
         Timer2.Enabled = True
 
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        FrmAbout.ShowDialog()
+
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+
+    End Sub
+
+    Private Sub LinkLabel2_MouseDown(sender As Object, e As MouseEventArgs) Handles LinkLabel2.MouseDown
+        TxtBxPass.UseSystemPasswordChar = False
+
+    End Sub
+
+    Private Sub LinkLabel2_MouseUp(sender As Object, e As MouseEventArgs) Handles LinkLabel2.MouseUp
+        TxtBxPass.UseSystemPasswordChar = True
     End Sub
 End Class

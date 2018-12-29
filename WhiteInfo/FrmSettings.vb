@@ -10,7 +10,7 @@
         TextBox2.Text = FieldTwoName
         CheckBox1.Checked = FieldOne
         CheckBox2.Checked = FieldTwo
-
+        ComboBox1.Text = Baud
         Call CheckBox1_CheckedChanged(Nothing, Nothing)
         Call CheckBox2_CheckedChanged(Nothing, Nothing)
 
@@ -50,6 +50,9 @@
         SaveSetting("ESP-Config", "Settings", "AskToRestart", AskToRestart)
         SaveSetting("ESP-Config", "Settings", "DisconnectAfterWrite", DisconnectAfterWrite)
         Form1.ExtraFieldsMani()
+
+        Baud = ComboBox1.Text
+        SaveSetting("ESP-Config", "Settings", "Baud", Baud)
         Me.Close()
 
     End Sub
